@@ -5940,13 +5940,5 @@
 -- 
 
 
--- Initialisation stuff
-library:config_list_update()
-for index, value in themes.preset do 
-    pcall(function()
-        library:update_theme(index, value)
-    end)
-end
-task.wait()
-library.old_config = library:get_config()
+
 
