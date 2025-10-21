@@ -5940,7 +5940,6 @@
 -- 
 
 -- documentation 
-  local window = library:window({name = os.date('nightfallen.cc - %b %d %Y'), size = dim2(0, 750, 0, 782)})
 -- Initialisation stuff
 library:config_list_update()
 for index, value in themes.preset do 
