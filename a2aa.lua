@@ -5957,23 +5957,7 @@
     local Visuals = window:tab({name = "Visuals"})
 
     -- Aiming
-        local column =  Aiming:column() 
-            local selec, lock, assist  = column:multi_section({names = {"Selection", "Lock"}})
-                selec:toggle({name = "Enabled", flag = "target_selected", tooltip = "Manages selection of the target (both lock and aim assist)"})
-                :keybind({name = "Aiming", flag = "target_selected_bind"})
-                selec:toggle({name = "Auto Select", flag = "auto_select", tooltip = "Selects targets for you. (Edit the delay slider if you want more fps.)"})
-                selec:toggle({name = "Only Select Enemies", flag = "enemy_priority", tooltip = "Only targets users under the priority enemy (through the playerlist)"})
-                selec:dropdown({name = "Origin", flag = "distance_priority", items = {"Mouse", "Distance"}, default = "Mouse", tooltip = "Selects targets based on the origin"})
-                selec:slider({name = "Delay", min = 0, max = 1000, default = 40, interval = 1, suffix = "ms", flag = "target_selector_refresh_time", tooltip = "Used for optimizing the checks and target selection. Use for lower end pcs."})
-                selec:toggle({name = "Wall Check", flag = "wall_check"})
-                selec:toggle({name = "Knocked Check", flag = "knocked_check"})
-                selec:toggle({name = "ForceField Check", flag = "forcefield_check"})
-                selec:toggle({name = "Distance Check", flag = "distance_check", tooltip = "Checks if they are in the distance of the guns range"})
-                lock:toggle({name = "Enabled", flag = "silent_aim"})
-                lock:toggle({name = "Auto Shoot", flag = "auto_shoot"})
-                lock:dropdown({name = "Aim Bone", flag = "silent_aim_bone", items = {"Hrp", "Head"}, default = "Head"})
-                lock:toggle({name = "Magic Bullet", flag = "magic_bullet", tooltip = "Wallbang and forcehit combined into one ;^)"})
-                lock:toggle({name = "Invisible Bullets", flag = "invis_bullet", tooltip = "Makes your bullets invisible"})
+
                 
         local column =  Aiming:column() 
             local vis, other  = column:multi_section({names = {"Visuals", "Other"}})
