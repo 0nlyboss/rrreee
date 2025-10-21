@@ -5939,7 +5939,7 @@
     -- 
 -- 
 
-return library
+return library, themes
 
 
 
